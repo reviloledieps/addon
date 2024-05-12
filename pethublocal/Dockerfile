@@ -21,7 +21,7 @@ RUN git clone https://github.com/PetHubLocal/pethublocal
 
 # Install using PIP
 WORKDIR /code/pethublocal
-RUN pip3 install .
+RUN pip3 install . --break-system-packages
 
 # Final working directory is under share/pethublocal
 WORKDIR /share/pethublocal
